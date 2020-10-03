@@ -17,24 +17,26 @@ public class SortingMain {
         System.out.println(Arrays.toString(testarr3) + "->" + Arrays.toString(Sorting.bubbleSort(testarr3)));
         System.out.println(Arrays.toString(testarr4) + "->" + Arrays.toString(Sorting.bubbleSort(testarr4)));
 
-        System.out.println(Arrays.toString(randomArray()));
-
-        Scanner sc = new Scanner(System.in);
+        int[] arr6 = randomArray();
+       // System.out.println(Arrays.toString(randomArray()));
+       // System.out.println(Arrays.toString(arr6) + "->" + Arrays.toString(Sorting.bubbleSort(arr6)));
+        System.out.println(Arrays.toString(arr6) + "->" + Arrays.toString(Sorting.shakerSort(arr6)));
+      /*  Scanner sc = new Scanner(System.in);
         int[] testarr5 = new int[sc.nextInt()];
         for (int i = 0; i < testarr5.length; i++) {
             testarr5[i] = sc.nextInt();
-        }
+        }*/
     }
 
     //check how Random works
     public static int[] randomArray() {
         Random rd = new Random();
-        int c = rd.nextInt();
+        int c = rd.nextInt(10);
         if (c < 0)
             c *= -1;
         int[] arr = new int[c];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = rd.nextInt();
+            arr[i] = rd.nextInt(10);
         }
         return arr;
     }

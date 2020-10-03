@@ -3,7 +3,7 @@ package HomeWork2;
 public class Sorting {
 
     public static int[] bubbleSort(int[] arr){
-        int s = 0;
+        int s ;
 
         for (int i = 0; i < arr.length-1 ; i++) {
             for (int j = 0; j < arr.length-1; j++) {
@@ -19,13 +19,13 @@ public class Sorting {
     }
 
     public static int[] shakerSort(int[] arr){
-        int i = 0;
-        int s = 0;
+        int i ;
+        int s ;
         int left = 0;
         int right = arr.length;
 
         while(left < right){
-            for (i = right; i > left ; i--) {
+            for (i = right; i > left ; i--) { //some problem there
                 if (arr[i - 1] > arr[i]){
                     s = arr[i];
                     arr[i] = arr[i - 1];

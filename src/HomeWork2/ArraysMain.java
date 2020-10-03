@@ -72,12 +72,8 @@ public class ArraysMain {
         }
         System.out.println();
 
-       //using lists do that, or write that it is impossible, because it based on Iterator interface
-        /*for (int elem : List){
-            System.out.print(a);
-        }
-        System.out.println();*/
-
-
+        // foreach в обратном порядке невозможен т.к. нет данного варианта в документации
+        // + как пример бесконечная последовательность элементов. Не зная конечного числа элементов
+        // невозможно двигаться от последнего к первому.
     }
 }
