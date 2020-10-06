@@ -13,6 +13,8 @@ public class ArraysMain {
             arr[i] = sc.nextInt();
         }
 
+        sc.close();
+
         //do .. while
         int i = 0;
          do{
@@ -48,7 +50,7 @@ public class ArraysMain {
         sc.close();
         System.out.println();
 
-        /*Array out in reverse
+        /*Array in reverse
         * do .. while
         * */
         i = arr.length-1;
@@ -72,8 +74,16 @@ public class ArraysMain {
         }
         System.out.println();
 
-        // foreach в обратном порядке невозможен т.к. нет данного варианта в документации
-        // + как пример бесконечная последовательность элементов. Не зная конечного числа элементов
-        // невозможно двигаться от последнего к первому.
+        //foreach
+        int[] s = new int[arr.length];
+        int j = arr.length;
+        for (i = 0; i < arr.length; i++) {
+            s[j - 1] = arr[i];
+            j--;
+        }
+        for (int a: s){
+            System.out.print(a);
+        }
+        System.out.println();
     }
 }

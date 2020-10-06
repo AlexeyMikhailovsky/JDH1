@@ -54,10 +54,7 @@ public class OperationsPriority {
          * */
         //c=(5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> b++) / --a;
         /*
-        java: bad operand types for binary operator '/'
-        first type:  java.lang.Object&java.io.Serializable&java.lang.Comparable<? extends
-                     java.lang.Object&java.io.Serializable&java.lang.Comparable<?>>
-        second type: int
+        Первый тип логический, второй целочисленный
          * */
         f=6 - 2 > 3 && 12 * 12 <= 119;
         /*

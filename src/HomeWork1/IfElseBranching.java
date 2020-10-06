@@ -2,6 +2,8 @@ package HomeWork1;
 
 import java.util.Scanner;
 
+//5.2
+
 public class IfElseBranching {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

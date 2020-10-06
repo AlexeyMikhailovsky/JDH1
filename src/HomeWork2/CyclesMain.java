@@ -8,11 +8,47 @@ public class CyclesMain {
 
         multiNumber(sc.nextInt());
         multiString(sc.next());
-       // longMath(sc.next(),sc.next());
+        expNumber(sc.next(),sc.next());
+        overflowStack();
+        multiTable();
 
         sc.close();
     }
 
+    //Таблица умножения
+    public static void multiTable(){
+        int n = 1;
+        while(n < 11) {
+            for (int j = 2; j < 6; j++) {
+                System.out.print(j + " x " + n + " = " + (j * n) + " " );
+            }
+            n++;
+            System.out.println();
+        }
+        System.out.println();
+        n = 1;
+        while(n < 11) {
+            for (int j = 6; j < 10; j++) {
+                System.out.print(j + " x " + n + " = " + (j * n) + " " );
+            }
+            n++;
+            System.out.println();
+        }
+    }
+
+    //Переполнение
+    public static void overflowStack(){
+        long a = 1;
+        while (a > 0) {
+            a = a * 3;
+            if ((a * 3) < 0){
+                System.out.println("Before overflow: " + a + " After overflow: " + (a * 3));
+                break;
+            }
+        }
+    }
+
+    //Разложение числа (1.1)
     public static void multiNumber(final int number){
         int a = number;
         int b = 1;
@@ -25,6 +61,7 @@ public class CyclesMain {
         }
     }
 
+    //Разложение строки (1.2)
     public static void multiString(final String number){
         String s = number;
         String s1;
@@ -52,22 +89,16 @@ public class CyclesMain {
                 System.out.println("Error in converting String to Integer.");
             }
         }
-    }//everything at another class
+    }
 
-   // public static String longMath(final String a, final String b){
-    //    String summ;
-
-
-
-
-    //    return summ;
-   // }
-
-    public static int strToInt(final String s, final int i){
-        String s1 = "";
-        int c;
-        s1 = s.substring(i);
-        c = Integer.parseInt(s1);
-        return c;
+    //Возведение в степень
+    public static void expNumber(final String a, final String b){
+        float f = Float.parseFloat(a);
+        int exp = Integer.parseInt(b);
+        float summ = 1;
+        for (int i = 0; i < exp ; i++) {
+            summ = summ * f;
+        }
+        System.out.println(summ);
     }
 }

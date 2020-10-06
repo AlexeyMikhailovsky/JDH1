@@ -22,10 +22,10 @@ public class Sorting {
         int i ;
         int s ;
         int left = 0;
-        int right = arr.length;
+        int right = arr.length - 1;
 
         while(left < right){
-            for (i = right; i > left ; i--) { //some problem there
+            for (i = right; i > left ; i--) {
                 if (arr[i - 1] > arr[i]){
                     s = arr[i];
                     arr[i] = arr[i - 1];
@@ -34,10 +34,10 @@ public class Sorting {
             }
             left += 1;
             for (i = left; i < right ; i++) {
-                if (arr[i - 1] > arr[i]) {
+                if (arr[i + 1] < arr[i]) {
                     s = arr[i];
-                    arr[i] = arr[i - 1];
-                    arr[i - 1] = s;
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = s;
                 }
             }
             right -= 1;
