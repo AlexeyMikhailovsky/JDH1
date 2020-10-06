@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //5.3
 
-public class SwitchBranching {
+public class SwitchBranchingMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input name: ");

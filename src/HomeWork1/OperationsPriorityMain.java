@@ -2,7 +2,7 @@ package HomeWork1;
 
 import java.util.Scanner;
 
-public class OperationsPriority {
+public class OperationsPriorityMain {
     public static void main(String[] args) {
         int a = 8;
         int b = 2;

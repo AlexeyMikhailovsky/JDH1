@@ -12,10 +12,10 @@ public class SortingMain {
         int[] testarr4 = {};
 
         //Проверка сортировки пузырьком
-        System.out.println(Arrays.toString(testarr1) + "->" + Arrays.toString(Sorting.bubbleSort(testarr1)));
-        System.out.println(Arrays.toString(testarr2) + "->" + Arrays.toString(Sorting.bubbleSort(testarr2)));
-        System.out.println(Arrays.toString(testarr3) + "->" + Arrays.toString(Sorting.bubbleSort(testarr3)));
-        System.out.println(Arrays.toString(testarr4) + "->" + Arrays.toString(Sorting.bubbleSort(testarr4)));
+        System.out.println(Arrays.toString(testarr1) + "->" + Arrays.toString(SortingLib.bubbleSort(testarr1)));
+        System.out.println(Arrays.toString(testarr2) + "->" + Arrays.toString(SortingLib.bubbleSort(testarr2)));
+        System.out.println(Arrays.toString(testarr3) + "->" + Arrays.toString(SortingLib.bubbleSort(testarr3)));
+        System.out.println(Arrays.toString(testarr4) + "->" + Arrays.toString(SortingLib.bubbleSort(testarr4)));
 
         int[] testarr5 = {1, 2, 3, 4, 5, 6};
         int[] testarr6 = {1, 1, 1, 1};
@@ -23,14 +23,14 @@ public class SortingMain {
         int[] testarr8 = {};
 
         //Проверка шейкерной сортировки
-        System.out.println(Arrays.toString(testarr5) + "->" + Arrays.toString(Sorting.shakerSort(testarr5)));
-        System.out.println(Arrays.toString(testarr6) + "->" + Arrays.toString(Sorting.shakerSort(testarr6)));
-        System.out.println(Arrays.toString(testarr7) + "->" + Arrays.toString(Sorting.shakerSort(testarr7)));
-        System.out.println(Arrays.toString(testarr8) + "->" + Arrays.toString(Sorting.shakerSort(testarr8)));
+        System.out.println(Arrays.toString(testarr5) + "->" + Arrays.toString(SortingLib.shakerSort(testarr5)));
+        System.out.println(Arrays.toString(testarr6) + "->" + Arrays.toString(SortingLib.shakerSort(testarr6)));
+        System.out.println(Arrays.toString(testarr7) + "->" + Arrays.toString(SortingLib.shakerSort(testarr7)));
+        System.out.println(Arrays.toString(testarr8) + "->" + Arrays.toString(SortingLib.shakerSort(testarr8)));
 
         //Проверка случайного массива
         int[] testarr9 = randomArray();
-        System.out.println(Arrays.toString(testarr9) + "->" + Arrays.toString(Sorting.shakerSort(testarr9)));
+        System.out.println(Arrays.toString(testarr9) + "->" + Arrays.toString(SortingLib.shakerSort(testarr9)));
 
         //Массив руками
         Scanner sc = new Scanner(System.in);
@@ -44,7 +44,7 @@ public class SortingMain {
 
         sc.close();
 
-        System.out.println(Arrays.toString(arr) + "->" + Arrays.toString(Sorting.shakerSort(arr)));
+        System.out.println(Arrays.toString(arr) + "->" + Arrays.toString(SortingLib.shakerSort(arr)));
     }
 
     //Случайный массив

@@ -1,6 +1,6 @@
 package HomeWork1;
 
-public class BitewiseOperations {
+public class BitewiseOperationsMain {
     public static void main(String[] args) {
         int a = 42;     //101010
         int b = 15;     //1111

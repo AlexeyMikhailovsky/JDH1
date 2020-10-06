@@ -2,7 +2,7 @@ package HomeWork1;
 
 import java.util.Scanner;
 
-public class MondaySleep {
+public class VacationWorkMain {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

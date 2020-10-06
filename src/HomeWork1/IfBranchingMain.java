@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //5.1
 
-public class IfBranching {
+public class IfBranchingMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input name: ");

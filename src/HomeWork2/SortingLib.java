@@ -1,6 +1,6 @@
 package HomeWork2;
 
-public class Sorting {
+public class SortingLib {
 
     public static int[] bubbleSort(int[] arr){
         int s ;
