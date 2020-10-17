@@ -3,6 +3,7 @@ package HomeWork2;
 public class SortingLib {
 
     public static int[] bubbleSort(int[] arr){
+
         int s ;
 
         for (int i = 0; i < arr.length-1 ; i++) {

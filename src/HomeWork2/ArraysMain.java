@@ -20,12 +20,12 @@ public class ArraysMain {
          do{
              System.out.print(arr[i]);
              i++;
-         }while(i<arr.length);
+         }while(i < arr.length);
         System.out.println();
 
         //while
         i = 0;
-        while(i<arr.length){
+        while(i < arr.length){
             System.out.print(arr[i]);
             i++;
         }

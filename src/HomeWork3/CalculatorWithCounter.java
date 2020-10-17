@@ -20,10 +20,7 @@ public class CalculatorWithCounter implements ICalculator{
         this.calcWithMathEx = new CalculatorWithMathExtends();
     }
 
-    public CalculatorWithCounter(CalculatorWithOperator calc){
-        this.calcWithOp = calc;
-
-    }
+    public CalculatorWithCounter(CalculatorWithOperator calc){ this.calcWithOp = calc; }
 
     public CalculatorWithCounter(CalculatorWithMathCopy calc){
         this.calcWithMath = calc;

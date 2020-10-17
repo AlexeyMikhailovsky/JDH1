@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class SwitchBranchingMain {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Input name: ");
         String name = sc.nextLine();
+
         switch (name){
             case "Vasya":
                 System.out.println("Hello!");
