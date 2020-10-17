@@ -34,12 +34,10 @@ public class VacationWorkMain {
     }
 
     public static boolean sleepIn(boolean weekday, boolean vacation){
-        boolean slp = false;
         if (!weekday || vacation){
-            slp = true;
+            return true;
         } else{
-            slp=false;
+            return false;
         }
-        return slp;
     }
 }
