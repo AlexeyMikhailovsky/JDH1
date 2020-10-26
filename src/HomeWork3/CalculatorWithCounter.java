@@ -65,8 +65,5 @@ public class CalculatorWithCounter implements ICalculator{
         return this.calcWithMathEx.addition(a, b);
     }
 
-    @Override
-    public double outMemory() {
-        return 0;
-    }
+
 }

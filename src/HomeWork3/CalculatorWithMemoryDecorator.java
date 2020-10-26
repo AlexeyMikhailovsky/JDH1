@@ -1,6 +1,7 @@
 package HomeWork3;
 
-public class CalculatorWithMemoryDecorator extends Decorator {
+public class CalculatorWithMemoryDecorator implements ICalculator{
+    private ICalculator calc;
 
     private double memory = 0;
 
@@ -18,7 +19,6 @@ public class CalculatorWithMemoryDecorator extends Decorator {
         setMemory(lastOperationResult);
     }
 
-    @Override
     public double outMemory(){
         lastOperationResult = getMemory();
         setMemory(0);
@@ -26,7 +26,7 @@ public class CalculatorWithMemoryDecorator extends Decorator {
     }
 
     public CalculatorWithMemoryDecorator(ICalculator calc){
-        super(calc);
+        this.calc = calc;
     }
 
     public double power(double a, double b) {
@@ -71,12 +71,8 @@ public class CalculatorWithMemoryDecorator extends Decorator {
         return lastOperationResult ;
     }
 
-    @Override
-    public long getCountOperation() {
-        return this.calc.getCountOperation();
-    }
-
     public ICalculator getCalculator(){
         return this.calc;
     }
+
 }

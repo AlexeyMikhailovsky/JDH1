@@ -37,13 +37,4 @@ public class CalculatorWithOperator implements ICalculator{
 
     private double mabs(double x){ return (x < 0)? -x : x; }
 
-    @Override
-    public double outMemory() {
-        return 0;
-    }
-
-    @Override
-    public long getCountOperation() {
-        return 0;
-    }
 }

@@ -72,8 +72,4 @@ public class CalculatorWithMemory implements ICalculator {
         return lastOperationResult ;
     }
 
-    @Override
-    public long getCountOperation() {
-        return this.calc.getCountOperation();
-    }
 }

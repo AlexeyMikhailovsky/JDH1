@@ -5,15 +5,19 @@ public class CalculatorWithDecoratorMain {
         CalculatorWithMathExtends calc1 = new CalculatorWithMathExtends();
         CalculatorWithMemoryDecorator calc2 = new CalculatorWithMemoryDecorator(calc1);
         CalculatorWithCounterDecorator calc3 = new CalculatorWithCounterDecorator(calc2);
-        ICalculator calc4 = calc3;
+        ICalculator calc = calc3;
 
+        print(calc);
+        System.out.println(calc2.outMemory());
+    }
 
+    public static void print(ICalculator calculator){
         // double a = 4.1 + 15 * 7 + ((28 / 5) * (28 / 5));
-        System.out.println(calc4.addition
-                (4.1, calc4.addition
-                        (calc4.multiplication(15,7), calc4.power((28/5),2))));
-
-        System.out.println(calc4.outMemory());
-        System.out.println(calc4.getCountOperation());
+        System.out.println(calculator.addition
+                (4.1, calculator.addition
+                        (calculator.multiplication(15,7), calculator.power((28/5),2))));
+        if (calculator instanceof CalculatorWithCounterDecorator){
+            System.out.println(((CalculatorWithCounterDecorator) calculator).getCountOperation());
+        }
     }
 }

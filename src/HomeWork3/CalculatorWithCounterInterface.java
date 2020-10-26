@@ -53,8 +53,4 @@ public class CalculatorWithCounterInterface implements ICalculator{
         return this.calc.addition(a, b);
     }
 
-    @Override
-    public double outMemory() {
-        return 0;
-    }
 }

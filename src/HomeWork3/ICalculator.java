@@ -16,7 +16,4 @@ public interface ICalculator {
 
      double root(double a, double b);
 
-     double outMemory();
-
-     long getCountOperation();
 }

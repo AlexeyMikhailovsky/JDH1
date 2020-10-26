@@ -16,13 +16,4 @@ public class CalculatorWithMathCopy implements ICalculator{
 
     public double root(double a, double b){ return Math.pow(a,(1.0/b)); }
 
-    @Override
-    public double outMemory() {
-        return 0;
-    }
-
-    @Override
-    public long getCountOperation() {
-        return 0;
-    }
 }
