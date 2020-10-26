@@ -32,7 +32,7 @@ public class SortingMain {
         int[] testarr9 = randomArray();
         System.out.println(Arrays.toString(testarr9) + "->" + Arrays.toString(SortingLib.shakerSort(testarr9)));
 
-        //Массив руками
+        //Массив через консоль
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter length of array: ");
         int[] arr = new int[sc.nextInt()];

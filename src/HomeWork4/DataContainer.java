@@ -69,7 +69,7 @@ public class DataContainer<T> {
         return false;
     }
 
-    public void sort(Comparator<T> comparator){
+    public void sort(Comparator<T> comparator){ //change to fast sort and write DataComparator and foreach etarable
         int f = 0;
         T buff;
         for (int j = 0; j < data.length; j++) {
