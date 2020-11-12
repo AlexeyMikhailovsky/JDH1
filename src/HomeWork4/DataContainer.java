@@ -124,35 +124,18 @@ public class DataContainer<T> implements Iterable<T>, Comparable<T>{
     public void set(T value,int index){
         this.data[index] = value;
     }
-//    public static void sort(DataContainer<? extends Comparable> container){
-//        int f = 0;
-//        Object buff,buff2;
-//        for (int j = 0; j < container.data.length; j++) {
-//            for (int i = 0; i < container.data.length-1; i++) {
-//                f = container.data[i].compareTo(container.data[i+1]);
-//                if (f >= 0){
-//                    buff = container.get(i);
-//                    buff2 = container.get(i+1);
-//                    container.set(((? extends Comparable) buff2),i);
-//                }
-//            }
-//        }
-//    }
 
-//    public static void sort(DataContainer<?> container, Comparator<?> comparator){
-//        int f = 0;
-//        Object buff,buff2;
-//        for (int j = 0; j < container.data.length; j++) {
-//            for (int i = 0; i < container.data.length; i++) {
-//                f = comparator.compare(container.get(i), container.get(i+1));
-//                if (f >= 0){
-//                    buff = container.get(i);
-//                    buff2 = container.get(i+1);
-//
-//                }
-//            }
-//        }
-//    }
+    public static <T extends Comparable<T>> void sort(DataContainer<T> container){
+        if (container.data[0].compareTo(container.data[1]) > 0){
+
+        }
+    }
+
+    public static <T> void sort(DataContainer<T> container, Comparator<T> comparator){
+        if (comparator.compare(container.data[0], container.data[1]) > 0){
+
+        }
+    }
 
     @Override
     public int compareTo(T o) {

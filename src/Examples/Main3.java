@@ -1,23 +1,40 @@
 package Examples;
 
 
+import java.io.File;
+
 public class Main3 {
     public static void main(String[] args) {
-        String[] names = new String[]{"b", "f", "g", "ff"};
-        System.out.println(join("; ", names));
-    }
+        boolean fff =false;
+        String[] s = args;
+        StringBuilder g = new StringBuilder();
+        for (String ss : s){
+            if (fff){
+                g.append(ss);
 
-    public static String join(String delimiter, String[] strings) {
-        String s = "";
-
-        for (int i = 0; i < strings.length; i++) {
-            if ((i + 1) < strings.length) {
-                s += strings[i] + delimiter;
-            } else {
-                s += strings[i];
+            }else{
+                fff = true;
+                g.append(ss);
+                g.append(" ");
             }
         }
-        return s;
+        System.out.println(g.toString());
+       File file = new File(g.toString());
+
+       outT(file);
+    }
+
+    public static File outT(File f){
+        if (f.isDirectory()){
+            String dd = f.getAbsolutePath();
+            File[] fileList = f.listFiles();
+            for (File ff : fileList){
+                outT(ff);
+            }
+        }else {
+            System.out.println(f);
+        }
+        return null;
     }
 
 }
