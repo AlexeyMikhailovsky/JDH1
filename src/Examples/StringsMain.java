@@ -22,5 +22,13 @@ public class StringsMain {
         while (matcher.find()){
             System.out.println(matcher.group());
         }
+        System.out.println("-----");
+        StringBuilder t = new StringBuilder();
+        t.append("ssds");
+        System.out.println(t.toString());
+        t.delete(0,t.length());
+        System.out.println(t.toString());
+        System.out.println(t.length());
+        System.out.println("-----");
     }
 }
